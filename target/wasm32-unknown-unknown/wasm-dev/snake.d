@@ -1,0 +1,1 @@
+/Users/valentinrenaud/Desktop/Studies/INSA\ Lyon/5TC/S1/RUST/Snake/target/wasm32-unknown-unknown/wasm-dev/snake.wasm: /Users/valentinrenaud/Desktop/Studies/INSA\ Lyon/5TC/S1/RUST/Snake/src/main.rs

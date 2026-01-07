@@ -1,0 +1,48 @@
+{
+  "cli_version": "0.7.2 (35351eb)",
+  "rust_version": "rustc 1.92.0 (ded5c06cf 2025-12-08)",
+  "assets": {
+    "assets": {
+      "/Users/valentinrenaud/Desktop/Studies/INSA Lyon/5TC/S1/RUST/Snake/assets/favicon.ico": [
+        {
+          "absolute_source_path": "/Users/valentinrenaud/Desktop/Studies/INSA Lyon/5TC/S1/RUST/Snake/assets/favicon.ico",
+          "bundled_path": "favicon-dxh82c1fe8f85d667cd.ico",
+          "options": {
+            "add_hash": true,
+            "variant": "Unknown"
+          }
+        }
+      ],
+      "/Users/valentinrenaud/Desktop/Studies/INSA Lyon/5TC/S1/RUST/Snake/assets/header.svg": [
+        {
+          "absolute_source_path": "/Users/valentinrenaud/Desktop/Studies/INSA Lyon/5TC/S1/RUST/Snake/assets/header.svg",
+          "bundled_path": "header-dxhe44cd599e599ec5c.svg",
+          "options": {
+            "add_hash": true,
+            "variant": "Unknown"
+          }
+        }
+      ],
+      "/Users/valentinrenaud/Desktop/Studies/INSA Lyon/5TC/S1/RUST/Snake/assets/main.css": [
+        {
+          "absolute_source_path": "/Users/valentinrenaud/Desktop/Studies/INSA Lyon/5TC/S1/RUST/Snake/assets/main.css",
+          "bundled_path": "main-dxh6a93d297bae0fb71.css",
+          "options": {
+            "add_hash": true,
+            "variant": "Unknown"
+          }
+        }
+      ],
+      "/Users/valentinrenaud/Desktop/Studies/INSA Lyon/5TC/S1/RUST/Snake/assets/tailwind.css": [
+        {
+          "absolute_source_path": "/Users/valentinrenaud/Desktop/Studies/INSA Lyon/5TC/S1/RUST/Snake/assets/tailwind.css",
+          "bundled_path": "tailwind-dxh24da3669dd8cac31.css",
+          "options": {
+            "add_hash": true,
+            "variant": "Unknown"
+          }
+        }
+      ]
+    }
+  }
+}
