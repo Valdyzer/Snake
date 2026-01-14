@@ -1,0 +1,9 @@
+/Users/valentinrenaud/Desktop/Studies/INSA Lyon/5TC/S1/RUST/Snake/target/wasm-dev/deps/dioxus_core_macro-530857e96a33eee4.d: /Users/valentinrenaud/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/dioxus-core-macro-0.5.6/src/lib.rs /Users/valentinrenaud/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/dioxus-core-macro-0.5.6/src/component.rs /Users/valentinrenaud/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/dioxus-core-macro-0.5.6/src/props/mod.rs /Users/valentinrenaud/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/dioxus-core-macro-0.5.6/src/utils.rs /Users/valentinrenaud/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/dioxus-core-macro-0.5.6/src/../README.md
+
+/Users/valentinrenaud/Desktop/Studies/INSA Lyon/5TC/S1/RUST/Snake/target/wasm-dev/deps/libdioxus_core_macro-530857e96a33eee4.dylib: /Users/valentinrenaud/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/dioxus-core-macro-0.5.6/src/lib.rs /Users/valentinrenaud/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/dioxus-core-macro-0.5.6/src/component.rs /Users/valentinrenaud/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/dioxus-core-macro-0.5.6/src/props/mod.rs /Users/valentinrenaud/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/dioxus-core-macro-0.5.6/src/utils.rs /Users/valentinrenaud/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/dioxus-core-macro-0.5.6/src/../README.md
+
+/Users/valentinrenaud/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/dioxus-core-macro-0.5.6/src/lib.rs:
+/Users/valentinrenaud/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/dioxus-core-macro-0.5.6/src/component.rs:
+/Users/valentinrenaud/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/dioxus-core-macro-0.5.6/src/props/mod.rs:
+/Users/valentinrenaud/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/dioxus-core-macro-0.5.6/src/utils.rs:
+/Users/valentinrenaud/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/dioxus-core-macro-0.5.6/src/../README.md:

@@ -1,4 +1,9 @@
 use dioxus::prelude::*;
+mod movement; // Charge le module
+mod interface;
+use movement::{GameState, Position, Direction}; // Importe les structures
+use interface::{GRID_HEIGHT, GRID_WIDTH};
+
 
 const FAVICON: Asset = asset!("/assets/favicon.ico");
 const MAIN_CSS: Asset = asset!("/assets/main.css");

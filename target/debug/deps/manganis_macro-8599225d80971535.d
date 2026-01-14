@@ -1,0 +1,9 @@
+/Users/valentinrenaud/Desktop/Studies/INSA Lyon/5TC/S1/RUST/Snake/target/debug/deps/manganis_macro-8599225d80971535.d: /Users/valentinrenaud/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/manganis-macro-0.7.2/src/lib.rs /Users/valentinrenaud/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/manganis-macro-0.7.2/src/asset.rs /Users/valentinrenaud/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/manganis-macro-0.7.2/src/css_module.rs /Users/valentinrenaud/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/manganis-macro-0.7.2/src/linker.rs /Users/valentinrenaud/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/manganis-macro-0.7.2/src/../README.md
+
+/Users/valentinrenaud/Desktop/Studies/INSA Lyon/5TC/S1/RUST/Snake/target/debug/deps/libmanganis_macro-8599225d80971535.dylib: /Users/valentinrenaud/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/manganis-macro-0.7.2/src/lib.rs /Users/valentinrenaud/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/manganis-macro-0.7.2/src/asset.rs /Users/valentinrenaud/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/manganis-macro-0.7.2/src/css_module.rs /Users/valentinrenaud/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/manganis-macro-0.7.2/src/linker.rs /Users/valentinrenaud/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/manganis-macro-0.7.2/src/../README.md
+
+/Users/valentinrenaud/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/manganis-macro-0.7.2/src/lib.rs:
+/Users/valentinrenaud/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/manganis-macro-0.7.2/src/asset.rs:
+/Users/valentinrenaud/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/manganis-macro-0.7.2/src/css_module.rs:
+/Users/valentinrenaud/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/manganis-macro-0.7.2/src/linker.rs:
+/Users/valentinrenaud/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/manganis-macro-0.7.2/src/../README.md:
