@@ -22,7 +22,35 @@ pub fn Board(state: ReadOnlySignal<GameState>) -> Element {
          width: fit-content;"
     , GRID_WIDTH, GRID_HEIGHT);
 
-    
+    let mut cells = Vec::new();
+
+    for y in 0..GRID_HEIGHT {
+        for x in 0..GRID_WIDTH {
+            let pos = Position::new(x, y);
+            let is_snake_head = state.snake.front() == Some(&pos);
+            let is_snake_body = !is_snake_head && state.snake.contains(&pos);
+            let is_fruit = state.fruit == pos;
+            
+            // Couleur des éléments
+            let color = if is_snake_head {
+                "green"             // Tête du serpent
+            } else if is_snake_body {
+                "lightgreen"        // Queue du serpent
+            } else if is_fruit {
+                "red"               // Fruit
+            } else {
+                "#2f2d2dff"       // Case vide
+            };
+            
+            // Application à chaque cellule
+            cells.push(rsx! {
+                div {
+                    key: "{x}-{y}",
+                    style: "width: 20px; height: 20px; background-color: {color};"
+                }
+            });
+        }
+    }
     
 
     rsx! {
@@ -30,10 +58,7 @@ pub fn Board(state: ReadOnlySignal<GameState>) -> Element {
             style: "display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; background-color: #222; color: white; font-family: sans-serif;",
             h1 { "Snake Game" }
             div { "Score: {state.score}" }
-            div {
-                 style: "{grid_style}",
-                 
-            }
+            div { style: "{grid_style}", {cells.into_iter()} }  // Convertit le vecteur en itérateur
         }
     }
 }

@@ -10,6 +10,7 @@ edition = "2021"
 dioxus = { version = "0.7.1", features = [] }
 rand = "0.8"
 getrandom = { version = "0.2.15", features = ["js"] }
+gloo-timers = "0.3.0"
 
 
 [features]
