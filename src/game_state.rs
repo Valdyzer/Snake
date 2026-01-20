@@ -52,5 +52,12 @@ impl GameState {
         // Fait avancer le serpent
         self.snake.push_front(new_head);
         self.snake.pop_back();
+        
+    }
+
+    // Changement de direction du serpent
+    pub fn set_direction(&mut self, direction: Direction) {
+        self.new_direction = direction;
+            
     }
 }

@@ -30,12 +30,27 @@ fn App() -> Element {
         }
     });
 
+    // Requête clavier
+    let key_resquest = move |evt: KeyboardEvent| {
+        let mut state = game_state.write();
+        match evt.key() {
+            Key::ArrowUp => state.set_direction(Direction::Up),
+            Key::ArrowDown => state.set_direction(Direction::Down),
+            Key::ArrowLeft => state.set_direction(Direction::Left),
+            Key::ArrowRight => state.set_direction(Direction::Right),
+            _ => {}
+        }
+    };
+
+
     rsx! {
         div {
             outline: "none",
             tabindex: "0",
             autofocus: true,
-            style: "width: 100vw; height: 100vh; outline: none; overflow: hidden;",
+            style: "width: 100vw; height: 100vh; outline: none; overflow: hidden;", 
+            onkeydown: key_resquest,
+
             Board {state : game_state}
         }
     }
