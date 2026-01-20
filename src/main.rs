@@ -21,7 +21,7 @@ fn main() {
 fn App() -> Element {
     let mut game_state = use_signal(|| GameState::new());
 
-    // Boucle
+    // Boucle Principale
     use_future(move || async move {
         loop {
             TimeoutFuture::new(GAME_SPEED_MS as u32).await;
@@ -30,7 +30,7 @@ fn App() -> Element {
         }
     });
 
-    // Requête clavier
+    // Requêtes clavier
     let key_resquest = move |evt: KeyboardEvent| {
         let mut state = game_state.write();
         match evt.key() {
@@ -38,6 +38,13 @@ fn App() -> Element {
             Key::ArrowDown => state.set_direction(Direction::Down),
             Key::ArrowLeft => state.set_direction(Direction::Left),
             Key::ArrowRight => state.set_direction(Direction::Right),
+            
+            // taper la barre ESPACE pour recommencer la partie
+            Key::Character(char) if char == " " => {
+                if state.game_over {
+                    *state = GameState::new();
+                }
+            }
             _ => {}
         }
     };

@@ -59,6 +59,11 @@ pub fn Board(state: ReadOnlySignal<GameState>) -> Element {
             h1 { "Snake Game" }
             div { "Score: {state.score}" }
             div { style: "{grid_style}", {cells.into_iter()} }  // Convertit le vecteur en itérateur
+
+            if state.game_over {
+                div { style: "margin-top: 20px; color: red; font-weight: bold; font-size: 1.5rem;", "GAME OVER" }
+                div { "Press SPACE to restart" }
+            }
         }
     }
 }

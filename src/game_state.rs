@@ -33,13 +33,14 @@ impl GameState {
         }
     }
 
+
     // Toutes les 150 ms 
     pub fn phase(&mut self) {
         if self.game_over {
             return;
         }
 
-        self.direction = self.new_direction;
+        self.direction = self.new_direction;    // Nouvelle direction ? Sinon on garde la même
         let head = self.snake.front().unwrap();
         
         let new_head = match self.direction {
@@ -49,15 +50,40 @@ impl GameState {
             Direction::Right => Position::new(head.x + 1, head.y),
         };
 
-        // Fait avancer le serpent
+        if self.check_collision(new_head) {
+            self.game_over = true;
+            return;
+        }
+
+        // Fait avancer la tête 
         self.snake.push_front(new_head);
-        self.snake.pop_back();
+
+        if new_head == self.fruit {
+            self.score += 1;
+        } 
+        else {
+            self.snake.pop_back();  // Fait avancer le corps
+        }
         
     }
 
+
     // Changement de direction du serpent
     pub fn set_direction(&mut self, direction: Direction) {
-        self.new_direction = direction;
-            
+
+        // ------------------- Empêcher les demi-tours --------------------------- //
+
+        self.new_direction = direction;            
+    }
+
+
+    fn check_collision(&self, pos: Position) -> bool {
+        // Contre un mur (on applique les limites)
+        if pos.x < 0 || pos.x >= GRID_WIDTH || pos.y < 0 || pos.y >= GRID_HEIGHT {
+            return true;
+        }
+
+        // Contre le corps du serpent (on vérifie si le corps contient la tête)
+        self.snake.contains(&pos)
     }
 }
