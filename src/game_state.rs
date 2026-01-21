@@ -60,6 +60,8 @@ impl GameState {
 
         if new_head == self.fruit {
             self.score += 1;
+            self.fruit = Self::random_fruit();
+
         } 
         else {
             self.snake.pop_back();  // Fait avancer le corps
@@ -69,11 +71,23 @@ impl GameState {
 
 
     // Changement de direction du serpent
-    pub fn set_direction(&mut self, direction: Direction) {
+    pub fn set_direction(&mut self, dir: Direction) {
 
-        // ------------------- Empêcher les demi-tours --------------------------- //
+        //  Bloque les demi-tours directs 
+        if self.direction == Direction::Down {
+            if dir == Direction::Up { return; }
+        }
+        if self.direction == Direction::Up {
+            if dir == Direction::Down { return; }
+        }
+        if self.direction == Direction::Left {
+            if dir == Direction::Right { return; }
+        }
+        if self.direction == Direction::Right {
+            if dir == Direction::Left { return; }
+        }
 
-        self.new_direction = direction;            
+        self.new_direction = dir;            
     }
 
 
@@ -85,5 +99,15 @@ impl GameState {
 
         // Contre le corps du serpent (on vérifie si le corps contient la tête)
         self.snake.contains(&pos)
+    }
+
+
+    // Fait apparaître un fruit aléatoirement sur la grille
+    fn random_fruit() -> Position {
+        let mut pos = rand::thread_rng();
+        Position::new(
+            pos.gen_range(0..GRID_WIDTH),
+            pos.gen_range(0..GRID_HEIGHT),
+        )
     }
 }

@@ -55,7 +55,7 @@ pub fn Board(state: ReadOnlySignal<GameState>) -> Element {
 
     rsx! {
         div {
-            style: "display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; background-color: #222; color: white; font-family: sans-serif;",
+            style: "display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; background-color: #222; color: white; font-family: sans-serif; ",
             h1 { "Snake Game" }
             div { "Score: {state.score}" }
             div { style: "{grid_style}", {cells.into_iter()} }  // Convertit le vecteur en itérateur
