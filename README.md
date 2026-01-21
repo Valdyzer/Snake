@@ -37,6 +37,6 @@ Puis rentrer l'adresse indiquée dans la barre de recherche de n'importe quel na
 - [x] Changement de direction du serpent
 - [x] Collisions et GAME OVER
 - [x] Extension du serpent
-- [ ] Faire apparaître les fruits aléatoirement
-- [ ] Bloquer les demi-tours directs
+- [x] Faire apparaître les fruits aléatoirement
+- [x] Bloquer les demi-tours directs
   
